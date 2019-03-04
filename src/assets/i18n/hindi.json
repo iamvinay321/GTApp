@@ -1,0 +1,34 @@
+{
+    "HOME": {
+      "TITLE": "Bonjour Angular avec ngx-translate !",
+      "SELECT": "Changer la langue"
+    },
+    "form":{
+        "email": "ग्राहक ईमेल",
+        "phone": "ग्राहक फोन",
+        "usage": "प्रयोग",
+        "firstName": "पहला नाम",
+        "lastName": "अंतिम नाम",
+        "address1": "पता 1",
+        "city": "शहर",
+        "zipCode": "पिन कोड",
+        "state": "राज्य चुनें",
+        "country": "देश",
+        "billAddress" : "उसी बिलिंग पते का उपयोग करें",
+  
+        "description": "विवरण परीक्षण",
+        "cardTitle": "क्रेडिट कार्ड से भुगतान करें",
+        "cardAccept" : "स्वीकृत कार्ड",
+        "cardDesc" : "आपके क्रेडिट कार्ड का विवरण बिल के रूप में दिया जाएगा",
+  
+        "cardHolder": "कार्ड धारक",
+        "cardNumber": "कार्ड नंबर",
+        "expDate": "समाप्ति तिथि",
+        "expYear" : "साल",
+        "cvv": "सीवीवी",
+        "cancel": "रद्द करें और व्यापारी पर लौटें"
+  
+  
+      }
+  }
+  

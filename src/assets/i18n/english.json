@@ -1,0 +1,35 @@
+{
+    "HOME": {
+      "TITLE": "Hello Angular with ngx-translate!",
+      "SELECT": "Change language"
+    },
+    "form":{
+      "email": "Customer e-mail",
+      "phone": "Customer phone",
+      "usage": "Usage",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "address1": "Address 1",
+      "city": "City",
+      "zipCode": "Zip code",
+      "state": "Select State",
+      "country": "Country",
+      "billAddress" : "Use the same billing address",
+
+
+      "description": "Test Description",
+      "cardTitle": "Pay with Credit Card",
+      "cardAccept" : "Accepted cards",
+      "cardDesc" : "Your credit card statement will be billed as",
+
+      "cardHolder": "Card holder",
+      "cardNumber": "Card number",
+      "expDate": "Expiration date",
+      "expYear" : "Year",
+      "cvv": "CVV",
+      "cancel": "Cancel and return to merchant"
+
+     
+    }
+  }
+  

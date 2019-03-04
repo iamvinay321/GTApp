@@ -1,6 +1,8 @@
 import { Component , OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 import { CountryServiceService } from './country-service.service';
+import {TranslateService} from '@ngx-translate/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,7 +16,13 @@ export class AppComponent implements OnInit {
     countryInfo: any[] = [];
     cityInfo: any[] = [];
 
-    constructor(private formBuilder: FormBuilder, private country: CountryServiceService) { }
+    constructor(private formBuilder: FormBuilder, private country: CountryServiceService, public translate: TranslateService) { 
+      translate.addLangs(['african','albanian','english', 'french','hindi']);
+      translate.setDefaultLang('english');
+
+    const browserLang = translate.getBrowserLang();
+    translate.use(browserLang.match(/english|french/) ? browserLang : 'english');
+    }
 
     ngOnInit() {
         this.registerForm = this.formBuilder.group({

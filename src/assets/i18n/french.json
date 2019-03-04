@@ -1,0 +1,34 @@
+{
+    "HOME": {
+      "TITLE": "Bonjour Angular avec ngx-translate !",
+      "SELECT": "Changer la langue"
+    },
+    "form":{
+        "email": "Email client",
+        "phone": "Téléphone du client",
+        "usage": "Usage",
+        "firstName": "Prénom",
+        "lastName": "Nom de famille",
+        "address1": "Adresse 1",
+        "city": "Ville",
+        "zipCode": "Country",
+        "state": "Sélectionnez l'état",
+        "country": "Pays",
+        "billAddress" : "Utilisez la même adresse de facturation",
+  
+        "description": "Description du test",
+        "cardTitle": "Payez avec une carte de crédit",
+        "cardAccept" : "Cartes acceptées",
+        "cardDesc" : "Votre relevé de carte de crédit sera facturé comme",
+  
+        "cardHolder": "Titulaire de la carte",
+        "cardNumber": "Numéro de carte",
+        "expDate": "Date d'expiration",
+        "expYear" : "Année",
+        "cvv": "CVV",
+        "cancel": "Annuler et retourner au marchand"
+  
+  
+      }
+  }
+  
