@@ -1,0 +1,37 @@
+{
+    "HOME": {
+      "TITLE": "Hello Angular with ngx-translate!",
+      "SELECT": "Change language"
+    },
+    "form":{
+  
+       
+      
+      "email": "E-mail i klientit",
+      "phone": "Telefoni i klientit",
+      "usage": "Përdorim",
+      "firstName": "Emri",
+      "LastName": "Mbiemri",
+      "address1": "Adresa 1",
+      "qyteti": "Qyteti",
+      "zipCode": "Kodi Zip",
+      "state": "Zgjidh Shtetin",
+      "country": "Vendi",
+      "billAddress": "Përdorni të njëjtën adresë faturimi",
+
+
+      "description": "Përshkrimi i Testit",
+      "cardTitle": "Paguaj me kartë krediti",
+      "cardAccept": "Kartat e pranuara",
+      "cardDesc": "Deklarata e kartës suaj të kreditit do të faturohet si",
+
+      "cardHolder": "Mbajtësi i kartelave",
+      "cardNumber": "Numri i kartelës",
+      "expDate": "Data e skadimit",
+      "expYear": "Viti",
+      "cvv": "CVV",
+      "cancel": "Anulo dhe kthehu te tregtari"
+
+    }
+  }
+  

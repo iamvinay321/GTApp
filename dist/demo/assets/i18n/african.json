@@ -1,0 +1,34 @@
+{
+  "HOME": {
+    "TITLE": "Hello Angular with ngx-translate!",
+    "SELECT": "Change language"
+  },
+  "form":{
+
+     
+    
+    "email": "Kliënt e-pos",
+    "phone": "Klantfoon",
+    "usage": "gebruik",
+    "firstName":"Eerste naam",
+    "lastName":"Van",
+    "address1": "Adres 1",
+    "city":"Stad",
+    "zipCode": "Poskode",
+    "state": "Kies staat",
+    "country": "land",
+    "billAddress" :  "Gebruik dieselfde faktuur adres",
+    "description":  "Toets Beskrywing",
+    "cardTitle": "Betaal met kredietkaart",
+    "cardAccept" :"Aanvaarde kaarte",
+    "cardDesc" : "U kredietkaartstaat sal gehef word as",
+
+    "cardHolder":  "Kaarthouer",
+    "cardNumber": "Kaart nommer",
+    "expDate": "Vervaldatum",
+    "expYear" : "Jaar",
+    "cvv":  "CVV",
+    "cancel": "Kanselleer en keer terug na handelaar"
+
+  }
+}

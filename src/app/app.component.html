@@ -94,7 +94,7 @@
             <div class="form-group">
               <label>{{'form.state' | translate}}</label>
               <select class="form-control" (change)="onChangeState($event.target.value)">
-                <option *ngIf="stateInfo == ''" value="-1">--Select State--</option>
+                <option *ngIf="stateInfo" value="-1">--Select State--</option>
                 <option *ngFor="let state of stateInfo; let j = index" value="{{j}}">{{state.StateName}}</option>
               </select>
             </div>
