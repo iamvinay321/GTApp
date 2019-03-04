@@ -1,20 +1,212 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<section class="paymet_method">
+  <div class="container">
+    <div class="row">
+      <a><i class="fa fa-globe" aria-hidden="true"></i>English</a>
+    </div>
+  </div>
+  <div class="container">
 
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="blank"></div>
+          <div class="cust_email">
+
+            <div class="form-group">
+              <label> <span class="requied"> </span> Customer e-mail</label>
+              <input type="email" class="form-control" id="email" formControlName="email" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+              <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                <div *ngIf="f.email.errors.required">Email is required</div>
+                <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Customer phone</label>
+              <input type="text" class="form-control" id="number" formControlName="mobile" class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.mobile.errors }">
+              <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                <div *ngIf="f.mobile.errors.required">Contact number is required</div>
+                <div *ngIf="f.mobile.errors.pattern">Contact number fis required</div>
+
+                <div *ngIf="f.mobile.errors.mobile">Contact must be a valid </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Usage</label>
+              <input type="text" class="form-control" placeholder="Test Usage">
+            </div>
+            <div class="form-group">
+              <label> <span class="requied"> </span> First Name</label>
+              <input type="text" class="form-control" formControlName="firstName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }">
+
+              <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                <div *ngIf="f.firstName.errors.required">First Name is required</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label> <span class="requied"> </span> Last Name</label>
+              <input type="text" class="form-control" formControlName="lastName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }">
+              <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label> <span class="requied"> </span> Address 1</label>
+              <input type="text" class="form-control" formControlName="address1" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.address1.errors }">
+              <div *ngIf="submitted && f.address1.errors" class="invalid-feedback">
+                <div *ngIf="f.address1.errors.required">Address is required</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label><span class="requied"> </span> City </label>
+              <input type="text" class="form-control" formControlName="city" [ngClass]="{ 'is-invalid': submitted && f.city.errors }">
+              <div *ngIf="submitted && f.city.errors" class="invalid-feedback">
+                <div *ngIf="f.city.errors.required">City is required</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label><span class="requied"> </span> Zip code </label>
+              <input type="text" class="form-control" formControlName="zipCode" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.zipCode.errors }">
+              <div *ngIf="submitted && f.zipCode.errors" class="invalid-feedback">
+                <div *ngIf="f.zipCode.errors.required">Zipcode is required</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label> <span class="requied"> </span> Country </label>
+              <select class="form-control" (change)="onChangeCountry($event.target.value)" formControlName="country" class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.cvv.errors }">
+                <option *ngFor="let country of countryInfo; let i = index" value="{{i}}">{{country.CountryName}}</option>
+              </select>
+
+              <div *ngIf="submitted && f.country.errors" class="invalid-feedback">
+                <div *ngIf="f.country.errors.required">country is required</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Select State</label>
+              <select class="form-control" (change)="onChangeState($event.target.value)">
+                <option *ngIf="stateInfo == ''" value="-1">--Select State--</option>
+                <option *ngFor="let state of stateInfo; let j = index" value="{{j}}">{{state.StateName}}</option>
+              </select>
+            </div>
+
+            <!-- <div class="form-group">
+              <label>Select City</label>
+              <select class="form-control">
+                <option *ngIf="cityInfo == ''" value="-1">--Select CIty--</option>
+                <option *ngFor="let city of cityInfo; let k = index" value="{{k}}">{{city}}</option>
+              </select>
+            </div> -->
+            <div class="form-group form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Use the billing address
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="card_detail">
+            <div class="tes_des">
+              You are about to pay for....
+              <span class="test_span"> Test Description </span>
+            </div>
+            <h1 class="text-right">1.11 USD</h1>
+            <div class="crit_home">
+              <img src="../assets/img/home.png" alt="">
+            </div>
+            <div class="accpet">
+              <p class="card_para">Pay with Credit Card</p>
+              <div class="visa_card">
+                <p class="accept_para">Accepted cards</p>
+                <img src="../assets/img/visa.png" width="10%" alt="">
+                <img src="../assets/img/master.png" width="10%" alt="">
+                <p class="billed_para">Your credit card statement will be billed as</p>
+                <p class="emo_para">emo ergerh</p>
+                <p class="text-center card_img"><img src="../assets/img/card.png" width="70%" alt=""> </p>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput0"> <span class="requied"></span> Card holder</label>
+                <input type="text" class="form-control" id="exampleFormControlInput0" formControlName="cardHolder"
+                  class="form-control" [ngClass]="{ 'is-invalid': submitted && f.cardHolder.errors }">
+                <div *ngIf="submitted && f.cardHolder.errors" class="invalid-feedback">
+                  <div *ngIf="f.cardHolder.errors.required">Card Holder is required</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1"> <span class="requied"></span> Card number</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" formControlName="cardNumber"
+                  class="form-control" [ngClass]="{ 'is-invalid': submitted && f.cardNumber.errors }">
+                <div *ngIf="submitted && f.cardNumber.errors" class="invalid-feedback">
+                  <div *ngIf="f.cardNumber.errors.required">Card Number is required</div>
+                  <div *ngIf="f.cardNumber.errors.pattern">Card Numbffer is required</div>
+
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label for="inputCity"><span class="requied"></span> Expiration date</label>
+                  <select class="form-control">
+                    <option selected>Selecte Month</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputCity"><span class="requied"></span> Year</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Select Year</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                    <option>2027</option>
+                    <option>2028</option>
+                    <option>2029</option>
+                    <option>2030</option>
+                    <option>2031</option>
+                    <option>2032</option>
+                    <option>2033</option>
+                    <option>2034</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputZip"><span class="requied"></span> CVC</label>
+                  <input type="password" class="form-control" id="inputZip" formControlName="cvv" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.cvv.errors }">
+                  <div *ngIf="submitted && f.cvv.errors" class="invalid-feedback">
+                    <div *ngIf="f.cvv.errors.required">CVV number is required</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="policy">
+            <p><input class="form-check-input" type="checkbox"> I acknowledge I have read the <a href="">Terms &
+                Condition </a> of
+              purchase , <a href="">Privacy Policy. </a> and authorize the payment.</p>
+            <p class="text-center margin_bot"> <button type="submit" class="btn  btn-primary">Pay</button> </p>
+            <p class="text-center cancel_tag"> <a href="">Cancel and return to merchant </a> </p>
+            <p class="text-center"> Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
