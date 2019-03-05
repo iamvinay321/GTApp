@@ -5,7 +5,7 @@
   },
   "form":{
 
-     
+     "languageTitle": "Engels",
     
     "email": "Kliënt e-pos",
     "phone": "Klantfoon",
@@ -28,7 +28,21 @@
     "expDate": "Vervaldatum",
     "expYear" : "Jaar",
     "cvv":  "CVV",
-    "cancel": "Kanselleer en keer terug na handelaar"
+    "cancel": "Kanselleer en keer terug na handelaar",
+
+    
+    "er1": "E-pos is nodig",
+    "err": "E-pos moet 'n geldige e-posadres wees",
+    "er2": "Kontaknommer is nodig",
+    "er3": "Voornaam is nodig",
+    "er4": "Van naam is nodig",
+    "er5": "adres is nodig",
+    "er6": "Stad is nodig",
+    "er7": "Poskode is nodig",
+    "er8": "land is nodig",
+    "er9": "Kaarthouer is nodig",
+    "er10": "Kaartnommer is nodig",
+    "er11": "CVV nommer is nodig"
 
   }
 }

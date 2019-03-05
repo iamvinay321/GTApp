@@ -6,7 +6,7 @@
     "form":{
   
        
-      
+      "languageTitle": "anglisht",
       "email": "E-mail i klientit",
       "phone": "Telefoni i klientit",
       "usage": "Përdorim",
@@ -30,7 +30,21 @@
       "expDate": "Data e skadimit",
       "expYear": "Viti",
       "cvv": "CVV",
-      "cancel": "Anulo dhe kthehu te tregtari"
+      "cancel": "Anulo dhe kthehu te tregtari",
+
+      
+      "er1": "Kërkohet emaili",
+      "err": "Email duhet të jetë një adresë e vlefshme email",
+      "er2": "Numri i kontaktit është i nevojshëm",
+      "er3": "Emri është i nevojshëm",
+      "er4": "Mbiemri është i nevojshëm",
+      "er5": "Kërkohet adresa",
+      "er6": "Qyteti është i nevojshëm",
+      "er7": "Kërkohet Kodi Zip",
+      "er8": "Vendi është i nevojshëm",
+      "er9": "Mbajtësi i kartelës është i nevojshëm",
+      "er10": "Numri i kartelës është i nevojshëm",
+      "er11": "Nevojitet një numër CVV"
 
     }
   }

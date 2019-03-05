@@ -4,6 +4,7 @@
       "SELECT": "Change language"
     },
     "form":{
+      "languageTitle": "English",
       "email": "Customer e-mail",
       "phone": "Customer phone",
       "usage": "Usage",
@@ -27,8 +28,22 @@
       "expDate": "Expiration date",
       "expYear" : "Year",
       "cvv": "CVV",
-      "cancel": "Cancel and return to merchant"
+      "cancel": "Cancel and return to merchant",
 
+      
+
+      "er1": "Email is required",
+      "err": "Email must be a valid email address",
+      "er2": "Contact number is required",
+      "er3": "First Name is required",
+      "er4":"Last Name is required",
+      "er5":"Address is required",
+      "er6":"City is required",
+      "er7":"Zipcode is required",
+      "er8":"country is required",
+      "er9":"Card Holder is required",
+      "er10":"Card Number is required",
+      "er11":"CVV number is required"
      
     }
   }

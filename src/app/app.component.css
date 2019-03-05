@@ -1,119 +1,20 @@
-label{
-    color: #b2b2b2 ;
+.language-selector-wrapper {
+    display: block;
+    float: left;
+    margin: 5px 0;
+    text-align: left;
+    width: 103px;
+    cursor: pointer;
 }
+
 .paymet_method{
     background-color: #eeeeee;
     padding: 30px 15px;
 }
-.cust_email{
-    background-color: #fff;
-    padding: 15px;
-    color: #888888;
-}
-.blank{
-    height: 50px;
-    background-color: #fff;
-    margin-bottom: 30px;
-}
-.form-control{
-    background-color: #fbfbfb;
-    color: #bababa;
-    border: 1px solid #d7d7d7;
-   
-}
-.form-control:focus{
-    box-shadow: none;
-    border: 1px solid #d7d7d7;
-    background-color: #fbfbfb;
-}
-.requied{
-    width: 5px;
-    height: 5px;
-    background-color: red;
-    display: inline-block;
-    border-radius: 100%;
-}
-.card_detail{
-    background-color: #fff;
-    color:  #746b6b;
-}
-.tes_des{
-    background-color: #fff;
-    height: 80px;
-    color: #d3d3d3;
-    padding: 10px 30px;
-}
-.test_span{
-    color: #979797;
-    display: block;
-}
-.card_detail h1{
-    background-color: #f4f4f4;
-    color: #a6b45d;
-    padding: 20px;
-    margin-bottom: 0;
-}
-.crit_home{
-    background-color: #ebe9ea;
-    padding: 30px;
-}
-.crit_home img{
-    width: 12%;
-}
-.accpet{
-    padding: 30px;
-}
-.card_para{
-    color: #686f44;
-    margin-bottom: 2rem;
-}
-.visa_card .accept_para{
-    margin-bottom: 0px;
-}
-.visa_card .billed_para{
-    background-color: #eeeeee;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-.visa_card .emo_para{
-    background-color: #fbfbfb;
-    padding: 20px 10px;
-    border-radius: 0 0 2px 2px;
-}
-.card_img img{
-    border-radius: 20px;
-}
-.policy {
-    background-color: #f5f5f5;
-    padding: 22px 60px;
-    color: #b2b2b2;
-}
-.policy a{
-    color: #3d3d3d;
-    text-decoration: underline;
-}
-.policy button{
-    padding: 10px 120px;
-    background-color: #94a545;
-    color: #fff;
-    border: none;
-}
-.cancel_tag{
-  border-bottom:1px solid #e5e5e5;
-  padding: 40px 0px;
-}
-.margin_bot{
-    margin-bottom: 0px;
-}
-.cancel_tag a{
-    color: #cdcdcd;
-}
-.policy button:hover , .policy button:active{
-    background-color: #94a545;
-    border: none;
-    box-shadow: none;
-}
+ul#menu li {
+    display:inline;
+    cursor: pointer;
+  }
 @media (min-width: 1200px){
 .container {
     max-width: 1080px;

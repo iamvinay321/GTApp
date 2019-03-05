@@ -4,6 +4,7 @@
       "SELECT": "Changer la langue"
     },
     "form":{
+        "languageTitle": "Anglais",
         "email": "Email client",
         "phone": "Téléphone du client",
         "usage": "Usage",
@@ -26,9 +27,21 @@
         "expDate": "Date d'expiration",
         "expYear" : "Année",
         "cvv": "CVV",
-        "cancel": "Annuler et retourner au marchand"
+        "cancel": "Annuler et retourner au marchand",
   
   
+        "er1": "Un email est requis",
+        "err": "L'email doit être une adresse email valide",
+        "er2": "Le numéro de contact est obligatoire",
+        "er3": "Prénom obligatoire",
+        "er4": "Le nom de famille est requis",
+        "er5": "L'adresse est obligatoire",
+        "er6": "Ville requise",
+        "er7": "Un code postal est requis",
+        "er8": "le pays est requis",
+        "er9": "Le titulaire de la carte est requis",
+        "er10": "Le numéro de carte est obligatoire",
+        "er11": "Un numéro CVV est requis"
       }
   }
   
